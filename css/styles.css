@@ -2,13 +2,24 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;500;600;700;800;900&display=swap');
 
+/** GENERAL **/
+
 body {
     font-family: 'Rubik', 'Roboto', 'Nunito', sans-serif;
+}
+
+p {
+    font-size: 18px;
 }
 
 /* h1 {
     font-family: 'Nunito', sans-serif;
 } */
+
+
+
+
+/** HEADER **/
 
 .navbar-brand {
     position: absolute;
@@ -42,4 +53,115 @@ body {
     background-color: #fff;
     border: 1px solid red;
     color: red;
+}
+
+/** FIRST SECTION **/
+
+#f-section-text, #f-section-image {
+    width: 45%;
+    display: inline-block;
+}
+
+/** FEATURES **/
+
+#features {
+    text-align: center;
+    justify-content: center;
+}
+
+#features p {
+    width: 45%;
+    margin: auto;
+}
+
+#ex1-content {
+    justify-content: center;
+}
+
+.tab-pane div {
+    width: 45%;
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.tab-pane div img {
+    width: 100%;
+}
+
+/** CARDS **/
+
+#cards {
+    /* margin: auto 0; */
+    text-align: center;
+}
+
+.card {
+    width: 30%;
+    display: inline-block;
+    vertical-align: top;
+}
+
+.card img {
+    width: 50%;
+}
+
+/**  FAQ **/
+
+#faq {
+    text-align: center;
+    width: 45%;
+    margin: auto;
+}
+
+.accordion-item {
+    width: 50%;
+    margin: auto;
+}
+
+#faq-button {
+    text-align: center;
+}
+
+/** FOOTER **/
+
+#before-footer {
+    text-align: center;
+
+}
+
+#before-footer input {
+    width: 20%;
+    margin: auto;
+    display: inline-block;
+}
+
+#footer {
+    background-color: black;
+    text-align: center;
+}
+
+#footer div {
+
+    display: inline-block;
+}
+
+#logo-footer {
+    width: 17%;
+}
+
+#nav-footer {
+    width: 43%;
+    text-align: left;
+}
+
+#social-footer {
+    width: 20%;
+}
+
+#footer-links {
+    list-style: none;
+}
+
+#footer-links li {
+    display: inline-block;
 }
