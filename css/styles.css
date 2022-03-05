@@ -306,10 +306,10 @@ border-bottom {
 }
 
 .accordion-button:not(.collapsed):after {
-  background-image: url("img/icon-arrow-r.svg");
+  background-image: url("../img/icon-arrow-r.svg");
 }
 .accordion-button:after {
-  background-image: url("img/icon-arrow.svg");
+  background-image: url("../img/icon-arrow.svg");
 }
 .accordion-button {
   padding: 18.4px 3% 18.4px 0;
@@ -435,8 +435,8 @@ border-bottom {
 }
 
 #facebook:hover {
-  content: url("/img/icon-facebook-r.svg");
+  content: url("img/icon-facebook-r.svg");
 }
 #twitter:hover {
-  content: url("/img/icon-twitter-r.svg");
+  content: url("img/icon-twitter-r.svg");
 }
