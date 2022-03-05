@@ -13,100 +13,325 @@
 } */
 
 @media (min-width: 768px) {
-    #menu-default {
-        display: block;
-    }
+  #menu-default {
+    display: block;
+  }
 
-    .mobile-brand {
-        display: none;
-    }
+  .mobile-brand {
+    display: none;
+  }
 
-    #mobile-hamburger {
-        display: none;
-    }
+  #mobile-hamburger {
+    display: none;
+  }
 
-    .overlay {
-        display: none !important;
-    }
+  .overlay {
+    display: none !important;
+  }
 }
 
 @media (max-width: 767px) {
+  .overlay {
+    height: 100%;
+    width: 100%;
+    display: none;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: #252b46e6;
+    /* background-color: rgba(0, 0, 0, 0.9); */
+  }
 
-    .overlay {
-        height: 100%;
-        width: 100%;
-        display: none;
-        position: fixed;
-        z-index: 1;
-        top: 0;
-        left: 0;
-        background-color: #252b46e6;
-        /* background-color: rgba(0, 0, 0, 0.9); */
-    }
+  .overlay-content {
+    position: relative;
+    top: 65px;
+    width: 80%;
+    text-align: center;
+    margin: auto;
+    margin-top: 30px;
+  }
 
-    .overlay-content {
-        position: relative;
-        top: 65px;
-        width: 80%;
-        text-align: center;
-        margin: auto;
-        margin-top: 30px;
-    }
+  .overlay .closebtn {
+    position: absolute;
+    top: 15px;
+    right: 45px;
+    font-size: 30px;
+  }
 
-    .overlay .closebtn {
-        position: absolute;
-        top: 15px;
-        right: 45px;
-        font-size: 30px;
-    }
+  .overlay a {
+    padding: 8px;
+    text-decoration: none;
+    text-transform: uppercase;
+    color: #ffffff;
+    display: block;
+    transition: 0.3s;
+  }
 
-    .overlay a {
-        padding: 8px;
-        text-decoration: none;
-        text-transform: uppercase;
-        color: #ffffff;
-        display: block;
-        transition: 0.3s;
-    }
+  .overlay-content a {
+    border-top: 1px solid #9194a170;
+    font-size: 20px;
+    letter-spacing: 3px;
+  }
 
-    .overlay-content a {
-        border-top: 1px solid #9194a170;
-        font-size: 20px;
-        letter-spacing: 3px;
-    }
+  .overlay a:hover,
+  .overlay a:focus {
+    color: #f1f1f1;
+  }
 
+  #menu-default {
+    display: none;
+  }
 
+  #closebtn {
+    top: 0px;
+    width: 50%;
+    text-align: right;
+  }
 
-    .overlay a:hover, .overlay a:focus {
-        color: #f1f1f1;
-    }
+  #mobile-hamburger {
+    margin-top: 20px;
+    margin-right: 10%;
+  }
 
-    #menu-default {
-        display: none;
-    }
+  #mobile-hamburger li span {
+    font-size: 30px;
+  }
 
-    #closebtn {
-        top: 0px;
-        width: 50%;
-        text-align: right;
-    }
+  #overlay-brand {
+    width: 150px;
+    position: absolute;
+    top: 16px;
+    left: 45px;
+  }
 
-    #mobile-hamburger {
-        margin-top: 20px;
-    }
+  #mobile-login {
+    width: 100%;
+    background-color: transparent;
+    border: 2px solid #ffffff;
+    font-size: 20px;
+    text-transform: uppercase;
+    margin-top: 5%;
+  }
 
-    #mobile-hamburger li span {
-        font-size: 30px;
-    }
+  #mobile-social {
+      position: absolute;
+      top: 85%;
+      left: 38%;
+      width: 50%;
+  }
 
-    #overlay-brand {
-        width: 150px;
-        position: absolute;
-        top: 16px;
-        left: 45px;
-    }
+  #mobile-social img {
+      margin: 10%;
+  }
 
-
+  .navbar-brand {
+      top: 3.5%;
+  }
 }
 
 /** END MOBILE MENU **/
+
+/** F-SECTION **/
+
+@media (max-width: 767px) {
+  #f-section {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    margin-bottom: 30%;
+  }
+
+  #f-section-text {
+    order: 1;
+    width: 100%;
+    margin: auto;
+  }
+
+  #f-section-text {
+      margin-top: 15%;
+  }
+
+  #f-section-text button {
+    padding-left: 2%;
+    padding-right: 2%;
+  }
+
+  #f-section-image {
+    order: 0;
+    width: 100%;
+    margin: auto;
+  }
+
+  #f-section-image img {
+    width: 100%;
+    margin: auto;
+  }
+
+  #background-img-fs-d {
+    width: 70%;
+    height: 20%;
+    background-color: #5368df;
+    position: absolute;
+    top: 16%;
+    right: 0;
+    z-index: -1;
+    border-bottom-left-radius: 35%;
+  }
+
+  /** END F-SECTION **/
+
+  /** FEATURES **/
+
+  #features p {
+    width: 100%;
+  }
+
+  #ex1 {
+    text-align: center;
+    flex-direction: column;
+    margin-bottom: 15% !important;
+  }
+
+  .nav-item {
+    width: 100%;
+    margin: auto !important;
+    border-top: 1px solid #9194a1;
+  }
+
+  .nav-item:last-child {
+    /* border-bottom: 1px solid #9194a1; */
+  }
+
+  .nav-tabs {
+    border-bottom: 1px solid #9194a1;
+  }
+
+  .nav-link,
+  .nav-link.active {
+    color: #252b46;
+    border-color: #fa5757;
+    width: 60%;
+    margin: auto;
+  }
+
+  #ex1-tab-1,
+  #ex2-tab-2,
+  #ex3-tab-3 {
+    display: flex !important;
+    flex-direction: column;
+  }
+
+  .tab-pane div,
+  #text-tab {
+    text-align: center;
+    width: 100% !important;
+    margin: auto;
+  }
+
+  .text-tab {
+    margin-top: 15% !important;
+    margin-bottom: 20% !important;
+  }
+
+  /** END FEATURES **/
+
+  /** DOWNLOAD - CARDS **/
+
+  #download {
+    width: 100%;
+  }
+
+  #cards {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .card {
+    width: 100%;
+    padding-top: 10%;
+    margin-bottom: 10%;
+  }
+
+  .card-img {
+    width: 30%;
+  }
+
+  .dots {
+    width: 112%;
+    margin-left: -6%;
+  }
+
+  /** END DOWNLOAD - CARDS **/
+
+  /** FAQ **/
+
+  #faq {
+    width: 100%;
+    margin-top: 40%;
+    margin-bottom: 20%;
+  }
+
+  .accordion-item {
+    width: 100%;
+  }
+
+  #faq-button {
+    margin-top: 15%;
+    margin-bottom: 30%;
+  }
+
+  /** END FAQ **/
+
+  /** FOOTER **/
+  #before-footer h3 {
+    width: 100%;
+  }
+
+  #form {
+    display: flex;
+    flex-direction: column;
+    width: 80%;
+    margin: auto;
+  }
+
+  #before-footer input {
+    width: 100%;
+    margin-bottom: 5%;
+  }
+
+  #footer {
+    height: 30%;
+  }
+
+  #footer .container {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+  }
+
+  #logo-footer {
+    margin: auto;
+    margin-top: 10%;
+    text-align: center;
+    width: 100%;
+  }
+
+  #nav-footer {
+    width: 100%;
+  }
+
+  #footer-links li {
+    text-align: center;
+    display: block;
+    margin: 8% auto;
+  }
+
+  #social-footer {
+    width: 100%;
+    text-align: center;
+    margin: 5% auto 15% auto;
+  }
+
+  /** END FOOTER **/
+}

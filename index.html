@@ -27,8 +27,6 @@
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"
         integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
 
-    <script src="js/script.js"></script>
-
 </head>
 
 <body>
@@ -70,33 +68,43 @@
                 <a href="#">Features</a>
                 <a href="#">Pricing</a>
                 <a href="#">Contact</a>
-                <a href="#"><span class="btn btn-primary">Login</span></a>
+                <a href="#"><span id="mobile-login" class="btn btn-primary">Login</span></a>
+            </div>
+            <div id="mobile-social">
+                <img id="mobile-facebook" src="img/icon-facebook.svg" alt="">
+                <img id="mobile-twitter" src="img/icon-twitter.svg" alt="">
             </div>
         </div>
         <ul class="nav justify-content-end" id="mobile-hamburger">
-            <li><span onclick="openNav()">&#9776;</span></li>
+            <li><span onclick="openNav()"><img src="img/icon-hamburger.svg" alt=""></span></li>
         </ul>
         <!-- End Mobile Menu -->
     </header>
     <!-- Web Content -->
     <main>
         <!-- First Section -->
-        <div class="container" id="f-section">
-            <div id="f-section-text">
-                <h1>A Simple Bookmark Manager</h1>
-                <p>A clean and simple imterface to organizeyour favorite websites. Open a new browser tab and see your
-                    sites load instantly. Try it for free.</p>
-                <button class="btn btn-primary">Get it on Chrome</button>
-                <button class="btn btn-secondary">Get it on Firefox</button>
+        <div class="container">
+            <div id="f-section">
+                <div id="f-section-text">
+                    <h1>A Simple Bookmark Manager</h1>
+                    <p>A clean and simple interface to organizeyour favorite websites. Open a new browser tab and see
+                        your
+                        sites load instantly. Try it for free.</p>
+                    <button class="btn btn-primary">Get it on Chrome</button>
+                    <button class="btn btn-secondary">Get it on Firefox</button>
+                </div>
+                <div id="f-section-image">
+                    <img src="./img/illustration-hero.svg" alt="">
+                    <div id="background-img-fs-d"></div>
+                </div>
+
             </div>
-            <div id="f-section-image">
-                <img src="./img/illustration-hero.svg" alt="">
-            </div>
+
         </div>
         <!-- End First Section -->
         <!-- Features Section -->
         <div class="container" id="features">
-            <h3>Features</h3>
+            <h2>Features</h2>
             <p>Our aim to make it quick and easy for you to access your favorite websites. Your own bookmarks sync
                 between your devices so you can access them on the go.</p>
         </div>
@@ -123,9 +131,10 @@
                 <div class="tab-pane fade show active" id="ex1-tabs-1" role="tabpanel" aria-labelledby="ex1-tab-1">
                     <div id="img-tab-1">
                         <img src="./img/illustration-features-tab-1.svg" alt="">
+                        <div id="img1-bg-d"></div>
                     </div>
                     <div class="text-tab">
-                        <h3>Bookmark in one click</h3>
+                        <h2>Bookmark in one click</h2>
                         <p>Organize your bookmarks however you like. Our simple drag-and-drop interface gives you
                             complete
                             control over how you manage your favorite sites</p>
@@ -135,20 +144,24 @@
                 <div class="tab-pane fade" id="ex1-tabs-2" role="tabpanel" aria-labelledby="ex1-tab-2">
                     <div id="img-tab-2">
                         <img src="./img/illustration-features-tab-2.svg" alt="">
+                        <div id="img2-bg-d"></div>
                     </div>
                     <div class="text-tab">
-                        <h3>Intelligent search</h3>
-                        <p>Our powerful search feature will help you find saved sites in no time at all. No need to trawl through all of your bookmarks</p>
+                        <h2>Intelligent search</h2>
+                        <p>Our powerful search feature will help you find saved sites in no time at all. No need to
+                            trawl through all of your bookmarks</p>
                         <button class="btn btn-primary">More Info</button>
                     </div>
                 </div>
                 <div class="tab-pane fade" id="ex1-tabs-3" role="tabpanel" aria-labelledby="ex1-tab-3">
                     <div id="img-tab-3">
                         <img src="./img/illustration-features-tab-3.svg" alt="">
+                        <div id="img3-bg-d"></div>
                     </div>
                     <div class="text-tab">
-                        <h3>Share your bookmarks</h3>
-                        <p>Easily share your bookmarks and collections with others. Create a shareable link that you can send at the click of a button</p>
+                        <h2>Share your bookmarks</h2>
+                        <p>Easily share your bookmarks and collections with others. Create a shareable link that you can
+                            send at the click of a button</p>
                         <button class="btn btn-primary">More Info</button>
                     </div>
                 </div>
@@ -159,13 +172,13 @@
         <!-- Download Section -->
         <div class="container">
             <div id="download">
-                <h3>Download the extension</h3>
+                <h2>Download the extension</h2>
                 <p>We've got more brousers in the pipeline. Please do let us know if you've got a favourite you'd like
                     us to priorize.</p>
             </div>
             <div id="cards">
                 <div class="card">
-                    <img class="card-img" src="img/logo-chrome.svg" class="card-img-top" alt="Fissure in Sandstone"/>
+                    <img class="card-img" src="img/logo-chrome.svg" class="card-img-top" alt="Fissure in Sandstone" />
                     <div class="card-body">
                         <h4 class="card-title">Add to Chrome</h4>
                         <p class="card-text">Minimum version 62</p>
@@ -174,7 +187,7 @@
                     </div>
                 </div>
                 <div class="card" id="card-2">
-                    <img class="card-img" src="img/logo-firefox.svg" card-img-top" alt="Fissure in Sandstone"/>
+                    <img class="card-img" src="img/logo-firefox.svg" card-img-top" alt="Fissure in Sandstone" />
                     <div class="card-body">
                         <h4 class="card-title">Add to Firefox</h4>
                         <p class="card-text">Minimum version 55</p>
@@ -183,7 +196,7 @@
                     </div>
                 </div>
                 <div class="card" id="card-3">
-                    <img class="card-img" src="img/logo-opera.svg" class="card-img-top" alt="Fissure in Sandstone"/>
+                    <img class="card-img" src="img/logo-opera.svg" class="card-img-top" alt="Fissure in Sandstone" />
                     <div class="card-body">
                         <h4 class="card-title">Add to Opera</h4>
                         <p class="card-text">Minimum version 46</p>
@@ -197,7 +210,7 @@
         <!-- FAQ Section -->
         <div class="container">
             <div id="faq">
-                <h3>Frequently Asked Questions</h3>
+                <h2>Frequently Asked Questions</h2>
                 <p>Here are some of our FAQs. If you have any other questions you'd like answered please feel free to
                     email us.</p>
             </div>
@@ -256,7 +269,7 @@
                     </h2>
                     <div id="flush-collapseThree" class="accordion-collapse collapse"
                         aria-labelledby="flush-headingThree" data-mdb-parent="#accordionFlushExample">
-                        <div class="accordion-body" >
+                        <div class="accordion-body">
                             Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry
                             richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor
                             brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor,
@@ -298,10 +311,14 @@
         <!-- End FAQ Section -->
         <!-- Some Info Section -->
         <div id="before-footer">
-            <p>35.000+ Already Joined</p>
+            <p id="n-users">35.000+ Already Joined</p>
             <h3>Stay up-to-date with what we're doing</h3>
-            <input type="email" class="form-control">
-            <button class="btn btn-primary">Contact Us</button>
+            <form id="form" action="">
+                <input id="mail" type="email" name="mail" class="form-control" pattern="[^@\s]+@[^@\s]+\.[^@\s]+"
+                    placeholder="email@mail.com" required>
+                <button id="contact" type="submit" class="btn btn-danger">Contact Us</button>
+            </form>
+            <a href="mailto:krapulayt@gmail.com" id="mail-to"></a>
         </div>
         <!-- Some Info Section -->
     </main>
@@ -309,19 +326,21 @@
     <!-- Footer Menu -->
     <footer>
         <div id="footer">
-            <div id="logo-footer">
-                <img src="./img/logo-bookmark.svg" alt="">
-            </div>
-            <div id="nav-footer">
-                <ul id="footer-links">
-                    <li>Features</li>
-                    <li>Pricing</li>
-                    <li>Contact</li>
-                </ul>
-            </div>
-            <div id="social-footer">
-                <span><img src="./img/icon-facebook.svg" alt=""></span>
-                <span><img src="./img/icon-twitter.svg" alt=""></span>
+            <div class="container">
+                <div id="logo-footer">
+                    <img src="./img/logo-bookmark-tw.svg" alt="">
+                </div>
+                <div id="nav-footer">
+                    <ul id="footer-links">
+                        <li><a href="">Features</a></li>
+                        <li><a href="">Pricing</a></li>
+                        <li><a href="">Contact</a></li>
+                    </ul>
+                </div>
+                <div id="social-footer">
+                    <img id="facebook" src="img/icon-facebook.svg" alt="">
+                    <img id="twitter" src="img/icon-twitter.svg" alt="">
+                </div>
             </div>
         </div>
     </footer>
@@ -329,6 +348,7 @@
 
     <!-- MDB -->
     <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/3.10.2/mdb.min.js"></script>
+    <script src="js/script.js"></script>
 </body>
 
 </html>
